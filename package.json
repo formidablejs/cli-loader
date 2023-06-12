@@ -5,12 +5,12 @@
   "author": "Donald Pakkies",
   "license": "MIT",
   "main": "lib/index.js",
-  "types": "types/index.d.ts",
+  "types": "lib/index.d.ts",
   "bugs": "https://github.com/formidablejs/cli-loader/issues",
   "repository": "https://github.com/formidablejs/cli-loader",
   "files": [
     "lib",
-    "types"
+    "src"
   ],
   "scripts": {
     "build": "tsc --declaration"
