@@ -6,7 +6,8 @@ Installation
 Install the package using NPM or any other package manager of your choice.
 
 ```bash
-npm install @formidablejs/cli-loader
+npm install @formidablejs/cli-loader @formidablejs/console
+npm install --save-dev ts-node typescript
 ```
 
 Usage
