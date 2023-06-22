@@ -17,7 +17,7 @@ export const loader = (applcation: typeof Application, options: LoaderOptions): 
 
     const location = options?.development ? 'src' : 'lib'
 
-    commands.forEach(command => {
+    commands.filter((file: string) => ['.ts', '.js', '.mjs'].includes(path.extname(file).toLowerCase())).forEach(command => {
         const commandPath = path.join(options.root, location, 'Commands', command)
         const commandClass = require(commandPath).default
 
